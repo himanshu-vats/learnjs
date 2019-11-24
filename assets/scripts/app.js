@@ -14,8 +14,10 @@ function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
 
 function add() {
     const enteredNumber = getUserNumberInput();
+    console.log(enteredNumber);
     const initialResult = currentResult;
     currentResult += enteredNumber;
+    console.log(currentResult);
     createAndWriteOutput('+', initialResult, enteredNumber);
     const logEntry = {
         operation: 'ADD',
